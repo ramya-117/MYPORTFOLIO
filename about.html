@@ -67,6 +67,7 @@
   </nav>
 </header>
 
+
 <section class="page-title-alt bg-primary position-relative">
   <div class="container">
     <div class="row">
@@ -115,19 +116,13 @@
     <p class="gk-contact">🔗 <a href="https://www.linkedin.com/in/gomathi-krishnan-861185328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> | <a href="https://github.com/ramya-117">GitHub</a></p>
   </div>
 </section>
+<br>
+<section>
 
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
- <div class="gk-booklet-wrapper">
- <div class="gk-booklet-container">
+   <div class="gk-booklet-container" class="gk-booklet-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 auto; text-align: center;">
     <h1 class="gk-booklet-title">LOADING ME</h1>
 
-    <div class="gk-booklet">
+    <div class="gk-booklet" >
         <!-- Frontend Page -->
         <div class="gk-page gk-animate-page" style="animation-delay: 0.1s">
             <h2 class="gk-page-title">Frontend Development</h2>
@@ -611,6 +606,39 @@
     </div>
 </div>
 </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const skills = document.querySelectorAll('.gk-skill');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const skill = entry.target;
+          const percentage = skill.querySelector('.gk-skill-name span:last-child').textContent;
+          const progressBar = skill.querySelector('.gk-progress-bar');
+          progressBar.style.width = percentage;
+          observer.unobserve(skill); // Run once per skill
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger when 50% of the skill is visible
+    });
+
+    skills.forEach(skill => {
+      const progressBar = skill.querySelector('.gk-progress-bar');
+      const percentage = skill.querySelector('.gk-skill-name span:last-child').textContent;
+
+      // Initial width set to 0
+      progressBar.style.width = '0';
+      progressBar.style.transition = 'width 1.5s ease-in-out';
+
+      observer.observe(skill);
+    });
+  });
+</script>
+
+</section>
 
 
     <script>
