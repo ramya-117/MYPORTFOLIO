@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Template</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+      .social-box {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.social-box li {
+  display: inline-block;
+}
+
+.social-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover color based on platform */
+.linkedin-icon:hover {
+  background-color: #0077b5;
+  color: white;
+}
+.instagram-icon:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}
+.whatsapp-icon:hover {
+  background-color: #25D366;
+  color: white;
+}
+.github-icon:hover {
+  background-color: #333;
+  color: white;
+}
+.mail-icon:hover {
+  background-color: #D44638;
+  color: white;
+}
+  </style>
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    
+<div class="col-lg-11 mx-auto" style="text-align:left; padding: 40px 0;">
+  <h1 style="color: white; font-family: 'Poppins', sans-serif; font-size:4rem; line-height: 1.4;">
+    Hi! I’m <br> Gomathi Krishnan
+    <br>
+    <span id="typing-roles" style="color: white; font-size: 5rem; font-weight: bold; display: inline-block; margin-top: 20px;"></span>
+  </h1>
+</div>
+
+<!-- Typed.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typing-roles", {
+    strings: ["Web Developer", "Programmer", "Data Scientist", "Data Analyst"],
+    typeSpeed: 70,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+  <div class="layer-bg w-100">
+    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l3">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l4">
+    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l5">
+    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l6">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l7">
+    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l8">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-facebook"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-instagram"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-dribbble"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter"></i></a></li>
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="font-secondary paragraph-lg text-dark">✨ "I’m Gomathi, a passionate 3rd-year Integrated M.Sc. Data Science student with a developer’s heart and an analyst’s mind. Blending the logic of code with the power of data, I strive to turn ideas into impactful digital experiences and uncover stories hidden in numbers." ✨</p>
+        <a href="about.html" class="btn btn-transparent">know more about me...</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web Development (90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Data Science (70%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Data Analytics(80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Artificial intelligence(70%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /skills -->
+ 
+
+
+
+
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-info shadow rounded-circle d-block"  ></i>
+          </div>
+          
+          <div>
+            <p class="text-dark mb-1">2022-2027</p>
+            <h4>Masters in DataScience(AI ,Machine Learning ,Deep Learning)</h4>
+            <p class="mb-0 text-light">Amrita Vishwa vidhyapeetham Ettimadai,Coimbatore(2022–2027)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-info shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">Completed in 2022</p>
+            <h4>12th Grade (Bio-Maths)</h4>
+            <p class="mb-0 text-light">Government Higher Secondary School, Kuniyamuthur, Coimbatore</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80" >
+        <div class="d-flex" >
+          <div class="mr-lg-5 mr-3"  >
+            <i class="ti-medall icon icon-light icon-bg bg-info shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2025</p>
+            <h4>Front End developer Internship</h4>
+            <p class="mb-0 text-light">Indira Institute of Education(IEE) ,Coimbatore</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3" >
+            <i class="ti-medall icon icon-light icon-bg bg-info   shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">Completed in 2020</p>
+            <h4>10th Grade</h4>
+            <p class="mb-0 text-light">Saraswathi Ramachandran Vidhyalaya Matriculation,Higher Secondary School, Coimbatore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image" 
+  >
+</section>
+<!-- /education -->
+
+
+
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <article class="card shadow">
+            <img class="rounded card-img-top" src="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161759/EC_Artificial_Intelligence_750.jpg" alt="post-thumb">
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href=" https://whatsthebigdata.com/">What's The Big Data?</a>
+              </h4>
+              <p class="cars-text"> Handles extremely large and complex datasets that traditional tools can't manage.<br>
+Used for real-time analytics in industries like finance, healthcare, and retail.
+
+</p>
+              <a href="https://whatsthebigdata.com/" class="btn btn-xs btn-primary">Read More</a>
+            </div>
+          </article>
+        </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="https://etimg.etb2bimg.com/photo/92189303.cms" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="https://dataconomy.com/">Dataconomy</a>
+            </h4>
+            <p class="cars-text">Data is treated as a valuable asset, traded and monetized like goods.
+
+Drives innovation, personalization, and smarter business decisions across sectors.</p>
+            <a href="https://dataconomy.com/" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="https://cdn.prod.website-files.com/5f46c318c843828732a6f8e2/678a67f634a0160890ea0519_65e04fccf7b047d56a2db78b_Growth-Trends.webp" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="https://simplystatistics.org/posts/2025-02-17-universities-do-spend-indirect-costs-on-research-and-its-still-not-enough/">Simply Statistics</a>
+            </h4>
+            <p class="cars-text">Collects, analyzes, and interprets data to find trends and make decisions.
+
+Forms the foundation of data science, machine learning, and research analysis.</p>
+            <a href="https://simplystatistics.org/posts/2025-02-17-universities-do-spend-indirect-costs-on-research-and-its-still-not-enough/" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      
+</section>
+<!-- /blog -->
+
+<!-- contact -->
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="https://api.web3forms.com/submit" method="POST" class="row contact-form">
+            <input type="hidden" name="access_key" value="b5c04954-0869-4f24-a3af-ca91691149ef" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+            
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here" required></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button type="submit" class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">kgomathi2004@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">9894200436</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <a href="https://maps.app.goo.gl/gdiKmW1X7d2VU3Rm8" target="_blank" style="color: white; text-decoration: none;">
+      <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 8px; color: #f50404; ">
+      <p class="text-white paragraph-lg font-secondary">3/1b 3 rd street park Avenue Kuniyamuthur Coimbatore,641008 USA</p></i>
+    </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="social-box">
+    <li>
+      <a class="linkedin-icon" href="https://www.linkedin.com/in/gomathi-krishnan-420b74361" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="instagram-icon" href="https://www.instagram.com/mahadevs_puthri" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a class="whatsapp-icon" href="https://wa.me/9894200436" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a class="github-icon" href="https://github.com/ramya-117" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a class="mail-icon" href="mailto:kgomathi2004@gmail.com">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light"><script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> <a href="themefisher.com"></a></p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
